@@ -151,7 +151,7 @@ h6 {
 
 #header.header-scrolled,
 #header.header-inner {
-  background: rgba(6, 12, 34, 0.98);
+  background: rgba(64, 64, 64, 0.98);
   height: 70px;
 }
 
@@ -447,7 +447,7 @@ h6 {
   opacity: 1;
   visibility: visible;
   background: #fff;
-  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  box-shadow: 0px 0px 30px rgba(64, 64, 64, 0.25);
 }
 
 .navbar-mobile .dropdown ul li {
@@ -492,7 +492,7 @@ h6 {
 
 #hero:before {
   content: "";
-  background: rgba(6, 12, 34, 0.8);
+  background: rgba(0, 0, 0, 0.3);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -668,7 +668,7 @@ h6 {
 
 #about:before {
   content: "";
-  background: rgba(13, 20, 41, 0.8);
+  background: rgba(64, 64, 64, 0.2);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -680,7 +680,7 @@ h6 {
   font-size: 36px;
   font-weight: bold;
   margin-bottom: 10px;
-  color: #fff;
+  color: #219C90;
 }
 
 #about h3 {
@@ -688,13 +688,17 @@ h6 {
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 10px;
-  color: #fff;
+  color: #219C90;
 }
 
 #about p {
   font-size: 14px;
   margin-bottom: 20px;
   color: #fff;
+}
+
+#about p span {
+  color: #D83F31;
 }
 
 /*--------------------------------------------------------------
@@ -926,6 +930,13 @@ h6 {
 --------------------------------------------------------------*/
 #venue {
   padding: 60px 0;
+  background: url("../img/venue_img.jpg") center center no-repeat;
+  background-size: cover;
+  background-attachment: fixed; /* Makes the background fixed */
+}
+
+#venue p {
+  color: #fff;
 }
 
 #venue .container-fluid {
@@ -948,7 +959,7 @@ h6 {
 
 #venue .venue-info:before {
   content: "";
-  background: rgba(13, 20, 41, 0.8);
+  background: rgba(64, 64, 64, 0.8);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -1055,6 +1066,9 @@ h6 {
 #gallery {
   padding: 60px;
   overflow: hidden;
+  background: url("../img/gallery_bg.jpg") top center no-repeat;
+  background-size: cover;
+  background-attachment: fixed; /* Makes the background fixed */
 }
 
 #gallery .swiper-pagination {
@@ -1342,6 +1356,9 @@ h6 {
 --------------------------------------------------------------*/
 #contact {
   padding: 60px 0;
+  background: url("../img/contact_bg.jpg") top center no-repeat;
+  background-size: cover;
+  background-attachment: fixed; /* Makes the background fixed */
 }
 
 #contact .contact-info {
