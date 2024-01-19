@@ -572,14 +572,22 @@
       <!-- Template Main JS File -->
       <script src="assets/js/main.js"></script>
       <script>
-         document.getElementById('thumbnail').onclick = function() {
-         	document.getElementById('fullscreenImageContainer').style.display = 'flex';
-         };
-         
-         document.getElementById('fullscreenImageContainer').onclick = function() {
-         	this.style.display = 'none';
-         };
-          
+		document.getElementById('thumbnail').addEventListener('click', function() {
+			document.getElementById('fullscreenImageContainer').style.display = 'flex';
+		});
+
+		document.getElementById('fullscreenImageContainer').addEventListener('click', function() {
+			this.style.display = 'none';
+		});
+
+		// Optional: Add touch event listeners for mobile devices
+		document.getElementById('thumbnail').addEventListener('touchstart', function() {
+			document.getElementById('fullscreenImageContainer').style.display = 'flex';
+		});
+
+		document.getElementById('fullscreenImageContainer').addEventListener('touchstart', function() {
+			this.style.display = 'none';
+		});
       </script>
    </body>
 </html>
