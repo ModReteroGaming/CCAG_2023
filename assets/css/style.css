@@ -940,6 +940,30 @@ h6 {
 }
 
 /*--------------------------------------------------------------
+# Fullscreen Image Section
+--------------------------------------------------------------*/
+#fullscreenImageContainer {
+  position: fixed; /* Fullscreen */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.8); /* Dim Background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000; /* Ensure it's on top */
+}
+
+#fullscreenImageContainer img {
+  max-width: 80%; /* Adjust as necessary */
+  max-height: 80%; /* Adjust as necessary */
+  margin: auto; /* Center the image */
+}
+
+
+
+/*--------------------------------------------------------------
 # Speakers Section
 --------------------------------------------------------------*/
 #speakers {
@@ -1344,6 +1368,7 @@ h6 {
     margin-top: 6px;
   }
 }
+
 
 /*--------------------------------------------------------------
 # Sponsors Section
