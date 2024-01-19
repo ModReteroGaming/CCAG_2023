@@ -1374,6 +1374,11 @@ h6 {
 --------------------------------------------------------------*/
 #supporters {
   padding: 60px 0;
+  background: url(../img/sponsor_bg.png) center center no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+  background-attachment: fixed; /* Makes the background fixed */
 }
 
 #supporters .supporters-wrap {
@@ -1543,6 +1548,11 @@ h6 {
 --------------------------------------------------------------*/
 #buy-tickets {
   padding: 60px 0;
+  background: url(../img/booth_bg.png) center center no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+  background-attachment: fixed; /* Makes the background fixed */
 }
 
 #buy-tickets .card {
