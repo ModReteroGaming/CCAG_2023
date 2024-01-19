@@ -943,23 +943,22 @@ h6 {
 # Fullscreen Image Section
 --------------------------------------------------------------*/
 #fullscreenImageContainer {
-  position: fixed; /* Fullscreen */
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0,0,0,0.8); /* Dim Background */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 1000; /* Ensure it's on top */
+    display: none; /* initially hidden */
+    position: fixed; /* or absolute */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* high value to be on top */
 }
 
 #fullscreenImageContainer img {
-  max-width: 80%; /* Adjust as necessary */
-  max-height: 80%; /* Adjust as necessary */
-  margin: auto; /* Center the image */
+    max-width: 90%; /* or any other suitable value */
+    max-height: 90%;
 }
+
 
 
 
