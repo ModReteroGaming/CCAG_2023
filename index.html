@@ -108,7 +108,7 @@
             <div class="container" data-aos="fade-up">
                <div class="section-header">
                   <h2>Our 2024 Flyer!</h2>
-                  <p>Click on the image to enlarge!</p>
+                  <p>Click/tap on the image to enlarge!</p>
                   <!-- Thumbnail Image -->
                   <img src="assets/img/gallery/thumb_9.png" alt="Thumbnail" id="thumbnail" style="cursor: pointer; display: block; margin: 0 auto;">
                </div>
@@ -235,6 +235,117 @@
             </div>
          </section>
          <!-- End Gallery Section -->
+         <!-- ======= Buy Ticket Section ======= -->
+         <section id="buy-tickets" class="section-with-bg">
+            <div class="container" data-aos="fade-up">
+               <div class="section-header">
+                  <h2>Buy Booth Space!</h2>
+                  <p>Live purchase links coming soon!!!</p>
+               </div>
+               <!--
+                  <div class="row">
+                     <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card mb-5 mb-lg-0">
+                           <div class="card-body">
+                              <h5 class="card-title text-muted text-uppercase text-center">Standard Access</h5>
+                              <h6 class="card-price text-center">$150</h6>
+                              <hr>
+                              <ul class="fa-ul">
+                                 <li><span class="fa-li"><i class="fa fa-check"></i></span>Regular Seating</li>
+                                 <li><span class="fa-li"><i class="fa fa-check"></i></span>Coffee Break</li>
+                                 <li><span class="fa-li"><i class="fa fa-check"></i></span>Custom Badge</li>
+                                 <li class="text-muted"><span class="fa-li"><i class="fa fa-times"></i></span>Community Access</li>
+                                 <li class="text-muted"><span class="fa-li"><i class="fa fa-times"></i></span>Workshop Access</li>
+                                 <li class="text-muted"><span class="fa-li"><i class="fa fa-times"></i></span>After Party</li>
+                              </ul>
+                              <hr>
+                              <div class="text-center">
+                                 <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#buy-ticket-modal" data-ticket-type="standard-access">Buy Now</button>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card mb-5 mb-lg-0">
+                           <div class="card-body">
+                              <h5 class="card-title text-muted text-uppercase text-center">Pro Access</h5>
+                              <h6 class="card-price text-center">$250</h6>
+                              <hr>
+                              <ul class="fa-ul">
+                                 <li><span class="fa-li"><i class="fa fa-check"></i></span>Regular Seating</li>
+                                 <li><span class="fa-li"><i class="fa fa-check"></i></span>Coffee Break</li>
+                                 <li><span class="fa-li"><i class="fa fa-check"></i></span>Custom Badge</li>
+                                 <li><span class="fa-li"><i class="fa fa-check"></i></span>Community Access</li>
+                                 <li class="text-muted"><span class="fa-li"><i class="fa fa-times"></i></span>Workshop Access</li>
+                                 <li class="text-muted"><span class="fa-li"><i class="fa fa-times"></i></span>After Party</li>
+                              </ul>
+                              <hr>
+                              <div class="text-center">
+                                 <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#buy-ticket-modal" data-ticket-type="pro-access">Buy Now</button>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                        <div class="card">
+                           <div class="card-body">
+                              <h5 class="card-title text-muted text-uppercase text-center">Premium Access</h5>
+                              <h6 class="card-price text-center">$350</h6>
+                              <hr>
+                              <ul class="fa-ul">
+                                 <li><span class="fa-li"><i class="fa fa-check"></i></span>Regular Seating</li>
+                                 <li><span class="fa-li"><i class="fa fa-check"></i></span>Coffee Break</li>
+                                 <li><span class="fa-li"><i class="fa fa-check"></i></span>Custom Badge</li>
+                                 <li><span class="fa-li"><i class="fa fa-check"></i></span>Community Access</li>
+                                 <li><span class="fa-li"><i class="fa fa-check"></i></span>Workshop Access</li>
+                                 <li><span class="fa-li"><i class="fa fa-check"></i></span>After Party</li>
+                              </ul>
+                              <hr>
+                              <div class="text-center">
+                                 <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#buy-ticket-modal" data-ticket-type="premium-access">Buy Now</button>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>-->
+            </div>
+            <!-- Modal Order Form -->
+            <div id="buy-ticket-modal" class="modal fade">
+               <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                     <div class="modal-header">
+                        <h4 class="modal-title">Buy Tickets</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                     </div>
+                     <div class="modal-body">
+                        <form method="POST" action="#">
+                           <div class="form-group">
+                              <input type="text" class="form-control" name="your-name" placeholder="Your Name">
+                           </div>
+                           <div class="form-group mt-3">
+                              <input type="text" class="form-control" name="your-email" placeholder="Your Email">
+                           </div>
+                           <div class="form-group mt-3">
+                              <select id="ticket-type" name="ticket-type" class="form-select">
+                                 <option value="">-- Select Your Ticket Type --</option>
+                                 <option value="standard-access">Standard Access</option>
+                                 <option value="pro-access">Pro Access</option>
+                                 <option value="premium-access">Premium Access</option>
+                              </select>
+                           </div>
+                           <div class="text-center mt-3">
+                              <button type="submit" class="btn">Buy Now</button>
+                           </div>
+                        </form>
+                     </div>
+                  </div>
+                  <!-- /.modal-content -->
+               </div>
+               <!-- /.modal-dialog -->
+            </div>
+            <!-- /.modal -->
+         </section>
+         <!-- End Buy Ticket Section -->		 
          <!-- ======= Supporters Section ======= -->
          <section id="supporters" class="section-with-bg">
             <div class="container" data-aos="fade-up">
@@ -244,22 +355,22 @@
                <div class="row no-gutters supporters-wrap clearfix" data-aos="zoom-in" data-aos-delay="100">
                   <div class="col-lg-3 col-md-4 col-xs-6">
                      <div class="supporter-logo">
-                        <img src="assets/img/supporters/clevelandgamingclassic.jpg" class="img-fluid" alt="">
+                        <a href="https://www.gamecleveland.com/" target="_blank"><img src="assets/img/supporters/clevelandgamingclassic.jpg" class="img-fluid" alt=""></a>
                      </div>
                   </div>
                   <div class="col-lg-3 col-md-4 col-xs-6">
                      <div class="supporter-logo">
-                        <img src="assets/img/supporters/vgclogo.gif" class="img-fluid" alt="">
+                        <a href="https://videogameconnection.com/" target="_blank"><img src="assets/img/supporters/vgclogo.gif" class="img-fluid" alt=""></a>
                      </div>
                   </div>
                   <div class="col-lg-3 col-md-4 col-xs-6">
                      <div class="supporter-logo">
-                        <img src="assets/img/supporters/kidforcecollectibles.jpg" class="img-fluid" alt="">
+                        <a href="https://www.kidforcecollectibles.com/" target="_blank"><img src="assets/img/supporters/kidforcecollectibles.jpg" class="img-fluid" alt=""></a>
                      </div>
                   </div>
                   <div class="col-lg-3 col-md-4 col-xs-6">
                      <div class="supporter-logo">
-                        <img src="assets/img/supporters/303104470_594406635692175_2315103728135137357_n.png" class="img-fluid" alt="">
+                        <a href="https://www.facebook.com/ModRetroGaming" target="_blank"><img src="assets/img/supporters/303104470_594406635692175_2315103728135137357_n.png" class="img-fluid" alt=""></a>
                      </div>
                   </div>
                   <!--
@@ -392,117 +503,7 @@
             </section>
             -->
          <!-- End Subscribe Section -->
-         <!-- ======= Buy Ticket Section ======= -->
-         <section id="buy-tickets" class="section-with-bg">
-            <div class="container" data-aos="fade-up">
-               <div class="section-header">
-                  <h2>Buy Booth Space!</h2>
-                  <p>Live purchase links coming soon!!!</p>
-               </div>
-               <!--
-                  <div class="row">
-                     <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-                        <div class="card mb-5 mb-lg-0">
-                           <div class="card-body">
-                              <h5 class="card-title text-muted text-uppercase text-center">Standard Access</h5>
-                              <h6 class="card-price text-center">$150</h6>
-                              <hr>
-                              <ul class="fa-ul">
-                                 <li><span class="fa-li"><i class="fa fa-check"></i></span>Regular Seating</li>
-                                 <li><span class="fa-li"><i class="fa fa-check"></i></span>Coffee Break</li>
-                                 <li><span class="fa-li"><i class="fa fa-check"></i></span>Custom Badge</li>
-                                 <li class="text-muted"><span class="fa-li"><i class="fa fa-times"></i></span>Community Access</li>
-                                 <li class="text-muted"><span class="fa-li"><i class="fa fa-times"></i></span>Workshop Access</li>
-                                 <li class="text-muted"><span class="fa-li"><i class="fa fa-times"></i></span>After Party</li>
-                              </ul>
-                              <hr>
-                              <div class="text-center">
-                                 <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#buy-ticket-modal" data-ticket-type="standard-access">Buy Now</button>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
-                        <div class="card mb-5 mb-lg-0">
-                           <div class="card-body">
-                              <h5 class="card-title text-muted text-uppercase text-center">Pro Access</h5>
-                              <h6 class="card-price text-center">$250</h6>
-                              <hr>
-                              <ul class="fa-ul">
-                                 <li><span class="fa-li"><i class="fa fa-check"></i></span>Regular Seating</li>
-                                 <li><span class="fa-li"><i class="fa fa-check"></i></span>Coffee Break</li>
-                                 <li><span class="fa-li"><i class="fa fa-check"></i></span>Custom Badge</li>
-                                 <li><span class="fa-li"><i class="fa fa-check"></i></span>Community Access</li>
-                                 <li class="text-muted"><span class="fa-li"><i class="fa fa-times"></i></span>Workshop Access</li>
-                                 <li class="text-muted"><span class="fa-li"><i class="fa fa-times"></i></span>After Party</li>
-                              </ul>
-                              <hr>
-                              <div class="text-center">
-                                 <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#buy-ticket-modal" data-ticket-type="pro-access">Buy Now</button>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
-                        <div class="card">
-                           <div class="card-body">
-                              <h5 class="card-title text-muted text-uppercase text-center">Premium Access</h5>
-                              <h6 class="card-price text-center">$350</h6>
-                              <hr>
-                              <ul class="fa-ul">
-                                 <li><span class="fa-li"><i class="fa fa-check"></i></span>Regular Seating</li>
-                                 <li><span class="fa-li"><i class="fa fa-check"></i></span>Coffee Break</li>
-                                 <li><span class="fa-li"><i class="fa fa-check"></i></span>Custom Badge</li>
-                                 <li><span class="fa-li"><i class="fa fa-check"></i></span>Community Access</li>
-                                 <li><span class="fa-li"><i class="fa fa-check"></i></span>Workshop Access</li>
-                                 <li><span class="fa-li"><i class="fa fa-check"></i></span>After Party</li>
-                              </ul>
-                              <hr>
-                              <div class="text-center">
-                                 <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#buy-ticket-modal" data-ticket-type="premium-access">Buy Now</button>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>-->
-            </div>
-            <!-- Modal Order Form -->
-            <div id="buy-ticket-modal" class="modal fade">
-               <div class="modal-dialog" role="document">
-                  <div class="modal-content">
-                     <div class="modal-header">
-                        <h4 class="modal-title">Buy Tickets</h4>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                     </div>
-                     <div class="modal-body">
-                        <form method="POST" action="#">
-                           <div class="form-group">
-                              <input type="text" class="form-control" name="your-name" placeholder="Your Name">
-                           </div>
-                           <div class="form-group mt-3">
-                              <input type="text" class="form-control" name="your-email" placeholder="Your Email">
-                           </div>
-                           <div class="form-group mt-3">
-                              <select id="ticket-type" name="ticket-type" class="form-select">
-                                 <option value="">-- Select Your Ticket Type --</option>
-                                 <option value="standard-access">Standard Access</option>
-                                 <option value="pro-access">Pro Access</option>
-                                 <option value="premium-access">Premium Access</option>
-                              </select>
-                           </div>
-                           <div class="text-center mt-3">
-                              <button type="submit" class="btn">Buy Now</button>
-                           </div>
-                        </form>
-                     </div>
-                  </div>
-                  <!-- /.modal-content -->
-               </div>
-               <!-- /.modal-dialog -->
-            </div>
-            <!-- /.modal -->
-         </section>
-         <!-- End Buy Ticket Section -->
+
          <!-- CONTACT SECTION PLACEHOLDER-->
       </main>
       <!-- End #main -->
